@@ -7,7 +7,7 @@ def calculate_time(delta):
     days = delta.days % 31
     months = delta.days / 31
     years = None
-    if months > 12:
+    if months >= 12:
         years = months / 12
         months %= 12
 
