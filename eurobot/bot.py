@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-from commands import commands
+from eurobot.commands import commands
 from telegram.ext import Updater
 import logging
 import sys
