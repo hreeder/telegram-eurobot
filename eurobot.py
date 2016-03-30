@@ -15,8 +15,8 @@ I know the following commands:\n"""
     for command, method in commands.items():
         welcome_text += "/%s    %s\n" % (command, method.__doc__)
 
-    welcome_text += "\nI am maintained by @hreeder."
-    bot.sendMessage(update.message.chat_id, text=welcome_text)
+    welcome_text += "\nI am maintained by @hreeder. My source code is [available here](https://github.com/hreeder/telegram-eurobot)"
+    bot.sendMessage(update.message.chat_id, text=welcome_text, parse_mode="Markdown")
 
 
 def error(bot, update, error):
